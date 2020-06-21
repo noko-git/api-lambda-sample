@@ -1,0 +1,10 @@
+{
+  "name": "api_test",
+  "description": "my_first_lambda description.",
+  "region": "ap-northeast-1",
+  "runtime": "python3.7",
+  "handler": "lambda_function.lambda_handler",
+  "role": "arn:aws:iam::<MY_ACCOUNT_ID>:role/service-role/<MY_ROLE>",
+  "timeout": 30,
+  "memory": 128
+}
