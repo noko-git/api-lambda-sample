@@ -15,10 +15,6 @@ $ cd python_env; pwd
 # 上記でセットアップしたpythonを利用
 $ python -m venv py374env 
 $ source /Users/username/opt/python_env/py374env/bin/activate 
-$ pip install numpy 
-$ pip install Pillow 
-$ pip install jupyter 
-$ jupyter notebook --notebook-dir=~/pj/ & 
 ```
 
 ### python-lambda-local と lambda-uploader のインストール
