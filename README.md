@@ -6,7 +6,7 @@
 ## 事前準備
 ### Python環境構築（構築済の場合不要）
 
-```python
+```bash
 $ brew install pyenv 
 $ pyenv install 3.7.4 
 $ pyenv global 3.7.4 
@@ -28,7 +28,7 @@ $ pip install python-lambda-local lambda-uploader
 * 統合
     * Lambda
 * ルート
-    * POST /lambda_api_test → lambda_api_test (Lambda)
+    * POST /api_lambda_test → api_lambda_test (Lambda)
 * ステージ
     * $default (Auto-deploy: enabled)
 
@@ -42,7 +42,7 @@ $ pip install python-lambda-local lambda-uploader
 * フォルダ構成
 
 ```bash
-lambda_api_test/
+api_lambda_test/
 ├── event.json
 ├── lambda.json
 ├── lambda_function.py
@@ -66,8 +66,9 @@ $ lambda-uploader
 ```
 
 * テスト
-```
-$ curl -X POST -H "Content-Type: application/json" -d '{"a":2, "b":3}' https://<MY_URL>/lambda_api_test
+
+```bash
+$ curl -X POST -H "Content-Type: application/json" -d '{"a":2, "b":3}' https://<MY_URL>/api_lambda_test
 ```
 
 ## 追加設定
